@@ -18,12 +18,20 @@
 </head>
 
 <body>
-    <nav id="navbar" class="w-100 opacity-80 d-flex bg-light position-fixed shadow-lg p-3 justify-content-center align-items-center">
+    <nav id="navbar">
         <ul class="d-flex w-100 justify-content-evenly align-items-center  ">
-            <li class="list-group">Content</li>
-            <li class="list-group">Content</li>
-            <li class="list-group">Content</li>
-            <li class="list-group">Content</li>
+            <li class="list-group">
+                <a class="text-decoration-none" href="#cover-img-section" id="nav-list">Banner</a>
+            </li>
+            <li class="list-group">
+                <a href="#leng" id="nav-list">CLARINS</a>
+            </li>
+            <li class="list-group">
+                <a href="#faii" id="nav-list">Designer</a>
+            </li>
+            <li class="list-group">
+                <a href="#DiorP2" id="nav-list">Dior</a>
+            </li>
         </ul>
     </nav>
     <!-- start cover-img section -->
@@ -33,8 +41,6 @@
         </div>
         <div class="" id="img-box">
             <img id="cover-img" class="" src="https://www.wellandgood.com/wp-content/uploads/2022/02/lancome-mascara.jpg" alt="cover-img">
-
-
     </section>
     < <!-- end cover-img section -->
         <section class="d-flex flex-column  align-items-center p-5" id="banner-section">
@@ -62,19 +68,19 @@
                 <h1>CLARINS</h1>
                 <pre>Hydra-Essentiel Bi-Phase Serum 30 ml</pre>
                 <pre>distributing : Central Department Store</pre>
-                <div class="container-fluid">
+                <div class="container">
                     <img src="https://backend.central.co.th/media/catalog/product/c/d/cds14942174-1col.jpg?impolicy=resize&width=553" class="float-start" width="140">
                     <img src="https://backend.central.co.th/media/catalog/product/c/d/cds14942174-4col.jpg?impolicy=resize&width=553" class="float-start" width="140">
                     <img src="https://backend.central.co.th/media/catalog/product/c/d/cds14942174-5col.jpg?impolicy=resize&width=553" class="float-start" width="140">
                     <div class=" d-flex flex-column justify-content-between  card ">
                         <div class="card-header">
-                            <a href="#leng ">
+                            <a href="#cover-img-section ">
                                 <button type="button " class="btn btn-outline-danger ">
                             Buy ฿2,520
                         </button>
                             </a>
                             <a> or </a>
-                            <a href="#leng ">
+                            <a href="#faii ">
                                 <button type="button " class="btn btn-outline-secondary ">
                             Purchasing using points
                         </button>
@@ -97,7 +103,7 @@
                             top
                         </button>
                             </a>
-                            <a href="#oath ">
+                            <a href="#faii ">
                                 <button type="button " class="btn btn-outline-dark ">
                             down
                         </button>
@@ -125,7 +131,7 @@
         </section>
 
         <div id="DiorP2">
-            <img class="report-fig" src="https://pbs.twimg.com/media/FK5vKX0agAEYvg-?format=png&name=900x900" / width="200">
+            <img class="report-fig" src="https://pbs.twimg.com/media/FK5vKX0agAEYvg-?format=png&name=900x900" width="200">
             <h5 id="text-dior">"In the world today, haute couture is one of the last repositories of the marvelous, and the couturier's the last possessors of the wand of Cinderella's Fairy Godmother."</p>
                 <br>
                 <p>-Christian Dior, translated by Antonia Fraser, 1957.</p> <br>
@@ -144,18 +150,18 @@
         <script type="text/javascript">
             var lastScrollTop = 0;
             navbar = document.getElementById("navbar");
-            window.addEventListener("scroll ", () => {
-                var scrollTop = window.pageXOffset || document.documentElement.scrollTop;
-                if (scrollTop > lastScrollTop) {
-                    navbar.style.top = "-80px";
-
+            window.addEventListener("scroll", () => {
+                var scrollToTop = window.pageYOffset || document.documentElement.scrollToTop;
+                if (scrollToTop > lastScrollTop) {
+                    navbar.style.top = "-80px"
                 } else {
                     navbar.style.top = "0px";
                 }
-                lastScrollTop = scrollTop
+                lastScrollTop = scrollToTop;
             });
         </script>
 </body>
+
 
 </html>
 
@@ -183,11 +189,26 @@
         scroll-behavior: smooth;
     }
     
-    nav#navbar {
+    nav {
+        display: flex;
+        width: 100%;
+        background: var(--white);
         height: 80px;
-        z-index: 2;
+        z-index: 5;
         transition: 0.5ms;
-        top: 0;
+        position: fixed;
+    }
+    
+    a#nav-list {
+        text-decoration: none;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: var(--black);
+        font-size: 19px;
+    }
+    
+    a#nav-list:hover {
+        color: var(--primary);
     }
     
     h1#header-title {
