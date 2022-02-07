@@ -20,7 +20,7 @@
 <body>
     <h1>My first java script</h1>
     <div>
-        <a onclick="handleOnClick(this)" id="btn-datetime"> Click </a>
+        <button onclick="handleOnClick(this)" id="btn-datetime"> Click me to date - time </button>
     </div>
 </body>
 <script>
@@ -37,11 +37,11 @@
     const handleOnClick = (e) => {
         const colors = ['red', 'blue', "#f88", "#5c5c", "#646464"];
         const now = new Date
-
         var count = 0
         e.onclick = () => {
 
             if (count > 3) {
+                //reset
                 count = 0
             } else {
                 count++
