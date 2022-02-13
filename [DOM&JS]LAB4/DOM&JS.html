@@ -22,6 +22,46 @@
     <div>
         <button onclick="handleOnClick(this)" id="btn-datetime"> Click me to date - time </button>
     </div>
+
+
+
+
+
+
+
+
+
+    <h1> Snapshots </h1>
+    <ul>
+    <p><b><a class="one"href="#" onclick="myFunction1()" ><li>
+    Kamado Tanjirō</li></a></b></p>
+    
+    <p><b><a class="two" href="#" onclick="myFunction2()" ><li>
+    Kamado Nezuko</li></a></b></p>
+    
+    <p><b><a class="three" href="#" onclick="myFunction3()" ><li>
+    Agatsuma Zen'itsu</li></a></b></p>
+    
+    <p><b><a class="four" href="#" onclick="myFunction4() "><li>
+    Hashibira Inosuke</li></a></b></p>
+    </ul>
+    
+
+    
+
+    <div id="myDIV">
+        <img id="image" src="https://i.pinimg.com/564x/75/7c/a2/757ca24fc43ff6c22a831e516c7b7abc.jpg" width = "282" height = "382">
+        </div>
+
+
+
+
+
+
+
+
+
+
 </body>
 <script>
     const handleHover = (e) => {
@@ -53,6 +93,57 @@
 
         }
     }
+
+
+
+
+// image s
+function myFunction1() {
+
+var x = document.getElementById('myDIV');
+if (x.style.display === 'none') {} 
+else {
+  x.style.display = 'block';
+  document.getElementById("image").src = "https://i.pinimg.com/564x/fb/4b/0b/fb4b0bdf98c058bfc8b32a0e6490d4af.jpg";}
+  document.getElementById("image").width = "290"
+  document.getElementById("image").height = "511"
+}
+
+function myFunction2() {
+
+var x = document.getElementById('myDIV');
+if (x.style.display === 'none') {} 
+else {
+  x.style.display = 'block';
+  document.getElementById("image").src = "https://i.pinimg.com/564x/71/7f/a9/717fa96bcd318a0d6e9b7445afbbb642.jpg";}
+  document.getElementById("image").width = "282"
+  document.getElementById("image").height = "617"
+}
+
+function myFunction3() {
+
+var x = document.getElementById('myDIV');
+if (x.style.display === 'none') {} 
+else {
+  x.style.display = 'block';
+  document.getElementById("image").src = "https://i.pinimg.com/564x/1b/43/fb/1b43fba06d848f9b4c8cd5f248a9b6d9.jpg";}
+   document.getElementById("image").width = "282"
+  document.getElementById("image").height = "501"
+
+}
+
+function myFunction4() {
+
+var x = document.getElementById('myDIV');
+if (x.style.display === 'none') {} 
+else {
+  x.style.display = 'block';
+  document.getElementById("image").src = "https://i.pinimg.com/564x/a9/b3/8c/a9b38cfbf1359ce5f5f8f3e9c0272473.jpg";}
+  document.getElementById("image").width = "282"
+  document.getElementById("image").height = "501"
+}
+// image end
+
 </script>
 
 </html>
@@ -79,4 +170,34 @@
         letter-spacing: 2px;
         text-transform: lowercase;
     }
+
+
+
+
+
+ 
+#myDIV {
+  width: 600px;
+  height: 600px;
+  background-color: #FFFFFF;
+}
+
+a.one:link {color:#FFB4FF;text-decoration:none;}
+a.one:visited {color:#FFB4FF;text-decoration:none;}
+a.one:hover {text-decoration:none;}
+
+a.two:link {color:#FFB4FF;text-decoration:none;}
+a.two:visited {color:#FFB4FF;text-decoration:none;}
+a.two:hover {text-decoration:none;}
+
+a.three:link {color:#FFB4FF;text-decoration:none;}
+a.three:visited {color:#FFB4FF;text-decoration:none;}
+a.three:hover {text-decoration:none;}
+
+
+a.four:link {color:#FFB4FF;text-decoration:none;}
+a.four:visited {color:#FFB4FF;text-decoration:none;}
+a.four:hover {text-decoration:none;}
+
+
 </style>
