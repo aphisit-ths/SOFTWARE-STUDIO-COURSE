@@ -30,23 +30,14 @@
         <button onclick="handleOnClick(this)" id="btn-datetime"> Click me to date - time </button>
     </div>
 
-
-
     <br>
-    <p id="p1"><a href="#" onclick="myFunction()">Member</a></p>
+    <p id="p1"><a href="#" onclick="myFunction()">Members</a></p>
     <ul id="member">
 
         <li>Ms. Nirmon Oatsawasai ,ID: 63015101</li>
         <li>Mr. Pantawat Thunanukul ,ID: 63015123</li>
         <li>Mr. Aphisit Thubsaeng ,ID: 63015208</li>
-
-
     </ul>
-
-
-
-
-
 
     <h1> Snapshots </h1>
     <ul>
@@ -71,22 +62,10 @@
                 </a></b></p>
     </ul>
 
-
-
-
     <div id="myDIV">
         <center> <img id="image" src="https://i.pinimg.com/564x/75/7c/a2/757ca24fc43ff6c22a831e516c7b7abc.jpg"
                 width="423" height="573"> </center>
     </div>
-
-
-
-
-
-
-
-
-
 
 </body>
 <script>
@@ -102,6 +81,7 @@
     //Click แล้วแสดง time-zone
     const handleOnClick = (e) => {
         const colors = ['red', 'blue', "#f88", "#5c5c", "#646464"];
+        const colors1 = ['#FFFFFF', 'red', "blue", "#646464", "#5c5c"];
         const now = new Date
         var count = 0
         e.onclick = () => {
@@ -113,12 +93,14 @@
                 count++
             }
             document.getElementById("btn-datetime").innerHTML = Date();
+            document.getElementById("btn-datetime").style.color = colors1[count]
             e.style.backgroundColor = colors[count]
             e.style.padding = "6px";
             e.style.border = "6px";
 
         }
     }
+    //f s
     //f s
 
     document.getElementById("p1").addEventListener("mouseover", mouseOver);
@@ -147,18 +129,7 @@
             x.style.display = 'none';
         }
     }
-
-
-
-
-
-
-
     //f end
-
-
-
-
 
     // image s
     function myFunction1() {
